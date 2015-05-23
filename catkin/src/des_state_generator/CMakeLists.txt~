@@ -5,10 +5,8 @@ project(des_state_generator)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  catkin_simple
   cwru_msgs
   cwru_srv
-  eigen
   geometry_msgs
   nav_msgs
   roscpp
@@ -16,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   robot_commander
 )
-
+find_package(cmake_modules REQUIRED)
 find_package(Eigen REQUIRED)
 include_directories(${Eigen_INCLUDE_DIRS})
 add_definitions(${EIGEN_DEFINITIONS})

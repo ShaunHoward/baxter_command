@@ -40,7 +40,7 @@
   <!-- Use test_depend for packages you need only for testing: -->
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-  <buildtool_depend>catkin_simple</buildtool_depend>
+  <buildtool_depend>cmake_modules</buildtool_depend>
   <build_depend>cwru_msgs</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>geometry_msgs</build_depend>

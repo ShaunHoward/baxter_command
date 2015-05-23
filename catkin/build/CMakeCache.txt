@@ -385,7 +385,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 joy_DIR:PATH=/opt/ros/indigo/share/joy/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/librostime.so
+lib:FILEPATH=lib-NOTFOUND
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
@@ -401,6 +401,9 @@ nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
 
 //Value Computed by CMake
 robot_commander_BINARY_DIR:STATIC=/home/baxter-dev/ros_workspace/baxter_ms/catkin/build/robot_commander
+
+//The directory containing a CMake configuration file for robot_commander.
+robot_commander_DIR:PATH=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/share/robot_commander/cmake
 
 //Value Computed by CMake
 robot_commander_SOURCE_DIR:STATIC=/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/robot_commander

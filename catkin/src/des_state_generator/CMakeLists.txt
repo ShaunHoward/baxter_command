@@ -7,15 +7,15 @@ project(des_state_generator)
 find_package(catkin REQUIRED COMPONENTS
   cwru_msgs
   cwru_srv
-  eigen
   geometry_msgs
   nav_msgs
   roscpp
   std_msgs
   tf
-  robot_commander
+  
 )
-
+find_package(robot_commander REQUIRED)
+find_package(cmake_modules REQUIRED)
 find_package(Eigen REQUIRED)
 include_directories(${Eigen_INCLUDE_DIRS})
 add_definitions(${EIGEN_DEFINITIONS})
