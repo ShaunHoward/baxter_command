@@ -1,0 +1,6 @@
+/home/baxter-dev/ros_workspace/catkin/build/CMakeFiles/clean_test_results.dir
+/home/baxter-dev/ros_workspace/catkin/build/CMakeFiles/doxygen.dir
+/home/baxter-dev/ros_workspace/catkin/build/gtest/CMakeFiles/gtest.dir
+/home/baxter-dev/ros_workspace/catkin/build/gtest/CMakeFiles/gtest_main.dir
+/home/baxter-dev/ros_workspace/catkin/build/CMakeFiles/run_tests.dir
+/home/baxter-dev/ros_workspace/catkin/build/CMakeFiles/tests.dir
