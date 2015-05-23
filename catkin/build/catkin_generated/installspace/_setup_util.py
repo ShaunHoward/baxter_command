@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
 #
@@ -259,7 +260,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/baxter-dev/ros_workspace/cwru-ros-pkg-hydro-gamma/catkin/devel;/home/baxter-dev/ros_ws/devel;/opt/ros/indigo'.split(';')
+        CMAKE_PREFIX_PATH = '/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel;/home/baxter-dev/ros_workspace/catkin/devel;/home/baxter-dev/ros_workspace/cwru-ros-pkg-hydro-gamma/catkin/devel;/home/baxter-dev/ros_ws/devel;/opt/ros/indigo'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/baxter-dev/ros_workspace/catkin/install/setup.sh
+    local-name: /home/baxter-dev/ros_workspace/baxter_ms/catkin/install/setup.sh

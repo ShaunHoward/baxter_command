@@ -1,2 +1,2 @@
-
--DCATKIN_DEVEL_PREFIX=/home/baxter-dev/ros_workspace/catkin/devel -DCMAKE_INSTALL_PREFIX=/home/baxter-dev/ros_workspace/catkin/install -G Unix Makefiles
+cwru_base_hydro/cwru_base:cwru_base_hydro/cwru_configs:cwru_base_hydro/cwru_maps:cwru_base_hydro/cwru_msgs:cwru_base_hydro/cwru_nav:cwru_base_hydro/cwru_srv:cwru_base_hydro/cwru_teleop:des_state_generator:interaction:media_learning_agent:navigation:point_cloud:robot_commander:sensor_utils:speech:steering_algorithm:vision
+-DCATKIN_DEVEL_PREFIX=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel -DCMAKE_INSTALL_PREFIX=/home/baxter-dev/ros_workspace/baxter_ms/catkin/install -G Unix Makefiles
