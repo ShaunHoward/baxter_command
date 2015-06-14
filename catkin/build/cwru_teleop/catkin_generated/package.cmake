@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cwru_teleop")
+set(cwru_teleop_MAINTAINER "lucbettaieb <lucbettaieb@todo.todo>")
+set(cwru_teleop_DEPRECATED "")
+set(cwru_teleop_VERSION "0.0.0")
+set(cwru_teleop_BUILD_DEPENDS "cwru_base" "geometry_msgs" "joy" "roscpp" "rospy" "std_msgs" "cwru_msgs")
+set(cwru_teleop_RUN_DEPENDS "cwru_base" "geometry_msgs" "joy" "roscpp" "rospy" "std_msgs" "cwru_msgs")
+set(cwru_teleop_BUILDTOOL_DEPENDS "catkin")

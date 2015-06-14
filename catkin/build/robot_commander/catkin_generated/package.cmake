@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "robot_commander")
+set(robot_commander_MAINTAINER "shaun <shaun@todo.todo>")
+set(robot_commander_DEPRECATED "")
+set(robot_commander_VERSION "0.0.0")
+set(robot_commander_BUILD_DEPENDS "std_msgs" "cwru_msgs" "cwru_srv" "geometry_msgs" "nav_msgs" "roscpp")
+set(robot_commander_RUN_DEPENDS "cwru_msgs" "cwru_srv" "geometry_msgs" "nav_msgs" "std_msgs" "roscpp")
+set(robot_commander_BUILDTOOL_DEPENDS "catkin")

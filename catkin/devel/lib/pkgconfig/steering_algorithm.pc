@@ -1,0 +1,8 @@
+prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel
+
+Name: steering_algorithm
+Description: Description of steering_algorithm
+Version: 0.0.0
+Cflags: -I/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/steering_algorithm/include
+Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib 
+Requires: 

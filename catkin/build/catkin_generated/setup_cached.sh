@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH="/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib:/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/baxter-dev/ros_workspace/baxter_ms/catkin/build"

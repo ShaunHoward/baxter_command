@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cwru_maps")
+set(cwru_maps_MAINTAINER "lucbettaieb <lucbettaieb@todo.todo>")
+set(cwru_maps_DEPRECATED "")
+set(cwru_maps_VERSION "0.0.0")
+set(cwru_maps_BUILD_DEPENDS )
+set(cwru_maps_RUN_DEPENDS )
+set(cwru_maps_BUILDTOOL_DEPENDS "catkin")

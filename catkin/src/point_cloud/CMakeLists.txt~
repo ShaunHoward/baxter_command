@@ -12,8 +12,9 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   sensor_msgs
   tf
-  Eigen
+  cmake_modules
 )
+find_package(Eigen REQUIRED)
 include_directories(${Eigen_INCLUDE_DIRS})
 add_definitions(${EIGEN_DEFINITIONS})
 

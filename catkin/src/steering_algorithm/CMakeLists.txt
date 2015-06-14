@@ -5,7 +5,7 @@ project(steering_algorithm)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  eigen
+  cmake_modules
   geometry_msgs
   nav_msgs
   roscpp
@@ -120,8 +120,8 @@ add_executable(steering_algorithm_jinx src/steering_algorithm_jinx.cpp)
 # add_dependencies(steering_algorithm_node steering_algorithm_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(steering_algorithm_abby steer_vel_profiler)
- target_link_libraries(steering_algorithm_jinx steer_vel_profiler)
+ target_link_libraries(steering_algorithm_abby robot_commander)
+ target_link_libraries(steering_algorithm_jinx robot_commander)
 
 #############
 ## Install ##

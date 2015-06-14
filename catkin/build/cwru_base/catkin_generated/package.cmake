@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cwru_base")
+set(cwru_base_MAINTAINER "Luc Bettaieb <bettaieb@case.edu>")
+set(cwru_base_DEPRECATED "")
+set(cwru_base_VERSION "0.0.1")
+set(cwru_base_BUILD_DEPENDS "diagnostic_updater" "geometry_msgs" "cwru_msgs" "nav_msgs" "roscpp" "rospy" "sicktoolbox_wrapper" "std_msgs" "std_srvs" "tf" "message_generation")
+set(cwru_base_RUN_DEPENDS "diagnostic_updater" "geometry_msgs" "cwru_msgs" "nav_msgs" "roscpp" "rospy" "sicktoolbox_wrapper" "std_msgs" "std_srvs" "tf" "message_runtime")
+set(cwru_base_BUILDTOOL_DEPENDS "catkin")

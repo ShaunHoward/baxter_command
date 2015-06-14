@@ -1,0 +1,8 @@
+prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/install
+
+Name: interaction
+Description: Description of interaction
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/install/lib 
+Requires: 

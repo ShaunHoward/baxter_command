@@ -9,7 +9,14 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   roscpp
   std_msgs
+#  cwru_msgs
+#  cwru_srv
 )
+
+include_directories(robot_commander)
+
+#add_executable(robot_commander SteerVelProfiler.cpp)
+#target_link_libraries(robot_commander des_state_generator)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -82,7 +89,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES robot_commander
+#  LIBRARIES robot_commander
 #  CATKIN_DEPENDS catkin_simple geometry_msgs nav_msgs roscpp
 #  DEPENDS system_lib
 )
@@ -99,7 +106,7 @@ include_directories(
 )
 
 ## Declare a cpp library
- add_library(steer_vel_profiler src/SteerVelProfiler.cpp)
+ #add_library(steer_vel_profiler src/SteerVelProfiler.cpp)
 
 ## Declare a cpp executablea
 # add_executable(robot_commander_node src/robot_commander_node.cpp)
@@ -162,7 +169,10 @@ include_directories(
 # catkin_add_nosetests(test)
 
 # Executables
+add_executable(steer_vel_profiler src/SteerVelProfiler.cpp)
 add_executable(vel_profiler src/vel_profiler.cpp)
 add_executable(abby_vel_profiler src/abby_vel_profiler.cpp)
-target_link_libraries(abby_vel_profiler steer_vel_profiler)
+add_library(robot_commander src/SteerVelProfiler.cpp)
+target_link_libraries(abby_vel_profiler robot_commander)
+
 # target_link_library(example my_lib)

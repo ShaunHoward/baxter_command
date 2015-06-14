@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "media_learning_agent")
+set(media_learning_agent_MAINTAINER "baxter-dev <baxter-dev@todo.todo>")
+set(media_learning_agent_DEPRECATED "")
+set(media_learning_agent_VERSION "0.0.0")
+set(media_learning_agent_BUILD_DEPENDS )
+set(media_learning_agent_RUN_DEPENDS )
+set(media_learning_agent_BUILDTOOL_DEPENDS "catkin")

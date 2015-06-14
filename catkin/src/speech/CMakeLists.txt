@@ -5,15 +5,15 @@ project(speech)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  cwru_msgs
-  cwru_srv
-  geometry_msgs
-  interactive_markers
-  nav_msgs
-  roscpp
-  rospy
-  std_msgs
-  tf
+#  cwru_msgs
+#  cwru_srv
+#  geometry_msgs
+#  interactive_markers
+#  nav_msgs
+#  roscpp
+#  rospy
+#  std_msgs
+#  tf
 )
 
 ## System dependencies are found with CMake's conventions

@@ -1,0 +1,8 @@
+prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel
+
+Name: des_state_generator
+Description: Description of des_state_generator
+Version: 0.0.0
+Cflags: -I/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/des_state_generator/include
+Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib 
+Requires: 

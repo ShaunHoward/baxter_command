@@ -1,0 +1,8 @@
+prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/install
+
+Name: navigation_baxter
+Description: Description of navigation_baxter
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/install/lib 
+Requires: 

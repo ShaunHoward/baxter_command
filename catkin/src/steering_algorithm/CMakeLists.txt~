@@ -1,16 +1,11 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(steering_algorithm)
 
-find_package(catkin_simple REQUIRED)
-
-catkin_simple()
-
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  catkin_simple
-  eigen
+  cmake_modules
   geometry_msgs
   nav_msgs
   roscpp
@@ -117,8 +112,8 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(steering_algorithm_node src/steering_algorithm_node.cpp)
-cs_add_executable(steering_algorithm_abby src/steering_algorithm_abby.cpp)
-cs_add_executable(steering_algorithm_jinx src/steering_algorithm_jinx.cpp)
+add_executable(steering_algorithm_abby src/steering_algorithm_abby.cpp)
+add_executable(steering_algorithm_jinx src/steering_algorithm_jinx.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -175,7 +170,3 @@ cs_add_executable(steering_algorithm_jinx src/steering_algorithm_jinx.cpp)
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-
-
-cs_install()
-cs_export()

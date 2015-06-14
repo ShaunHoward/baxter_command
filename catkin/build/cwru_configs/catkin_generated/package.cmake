@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "cwru_configs")
+set(cwru_configs_MAINTAINER "lucbettaieb <lucbettaieb@todo.todo>")
+set(cwru_configs_DEPRECATED "")
+set(cwru_configs_VERSION "0.0.0")
+set(cwru_configs_BUILD_DEPENDS )
+set(cwru_configs_RUN_DEPENDS )
+set(cwru_configs_BUILDTOOL_DEPENDS "catkin")
