@@ -2,7 +2,7 @@
 
 message(STATUS "cwru_srv: 0 messages, 4 services")
 
-set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Icwru_msgs:/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_msgs/msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Icwru_msgs:/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_msgs/msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,24 +15,24 @@ add_custom_target(cwru_srv_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
 add_custom_target(_cwru_srv_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" "geometry_msgs/Point:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:nav_msgs/Path:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" ""
 )
 
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
 add_custom_target(_cwru_srv_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" "geometry_msgs/Point:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:nav_msgs/Path:geometry_msgs/Pose"
 )
 
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
 add_custom_target(_cwru_srv_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" ""
 )
 
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
 add_custom_target(_cwru_srv_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cwru_srv" "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" ""
 )
 
 #
@@ -44,25 +44,25 @@ add_custom_target(_cwru_srv_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cwru_srv
+)
+_generate_srv_cpp(cwru_srv
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_cpp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_cpp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cwru_srv
-)
-_generate_srv_cpp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cwru_srv
@@ -80,13 +80,13 @@ add_custom_target(cwru_srv_generate_messages_cpp
 add_dependencies(cwru_srv_generate_messages cwru_srv_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_cpp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_cpp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_cpp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_cpp _cwru_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,25 +101,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS cwru_srv_generate_messages_cpp)
 
 ### Generating Services
 _generate_srv_lisp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cwru_srv
+)
+_generate_srv_lisp(cwru_srv
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_lisp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_lisp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cwru_srv
-)
-_generate_srv_lisp(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cwru_srv
@@ -137,13 +137,13 @@ add_custom_target(cwru_srv_generate_messages_lisp
 add_dependencies(cwru_srv_generate_messages cwru_srv_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_lisp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_lisp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_lisp _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_lisp _cwru_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -158,25 +158,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS cwru_srv_generate_messages_lisp)
 
 ### Generating Services
 _generate_srv_py(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cwru_srv
+)
+_generate_srv_py(cwru_srv
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_py(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cwru_srv
 )
 _generate_srv_py(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cwru_srv
-)
-_generate_srv_py(cwru_srv
-  "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
+  "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cwru_srv
@@ -194,13 +194,13 @@ add_custom_target(cwru_srv_generate_messages_py
 add_dependencies(cwru_srv_generate_messages cwru_srv_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_py _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_py _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_py _cwru_srv_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
+get_filename_component(_filename "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv" NAME_WE)
 add_dependencies(cwru_srv_generate_messages_py _cwru_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

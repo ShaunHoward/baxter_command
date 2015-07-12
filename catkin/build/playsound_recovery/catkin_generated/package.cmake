@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "playsound_recovery")
-set(playsound_recovery_MAINTAINER "lucbettaieb <lucbettaieb@todo.todo>")
-set(playsound_recovery_DEPRECATED "")
-set(playsound_recovery_VERSION "0.0.0")
-set(playsound_recovery_BUILD_DEPENDS "costmap_2d" "nav_core" "pluginlib" "roscpp" "sound_play" "tf")
-set(playsound_recovery_RUN_DEPENDS "costmap_2d" "nav_core" "pluginlib" "roscpp" "sound_play" "tf")
-set(playsound_recovery_BUILDTOOL_DEPENDS "catkin")

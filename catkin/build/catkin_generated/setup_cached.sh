@@ -7,6 +7,13 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib:/opt/ros/indigo/lib"
-export PKG_CONFIG_PATH="/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
-export PWD="/home/baxter-dev/ros_workspace/baxter_ms/catkin/build"
+export CMAKE_PREFIX_PATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel:$CMAKE_PREFIX_PATH"
+export CPATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/include:$CPATH"
+export LD_LIBRARY_PATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib:/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+export PATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/bin:$PATH"
+export PKG_CONFIG_PATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib/pkgconfig:/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/shaun/ros_workspace/baxter_ms/catkin/build"
+export PYTHONPATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/shaun/ros_workspace/baxter_ms/catkin/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/shaun/ros_workspace/baxter_ms/catkin/src:$ROS_PACKAGE_PATH"
+export RTT_COMPONENT_PATH="/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib/orocos:$RTT_COMPONENT_PATH"

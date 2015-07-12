@@ -1,8 +1,8 @@
-prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel
+prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
 
 Name: cwru_srv
 Description: Description of cwru_srv
 Version: 0.0.0
-Cflags: -I/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/include
-Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib 
+Cflags: -I/home/shaun/ros_workspace/baxter_ms/catkin/devel/include
+Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
 Requires: message_runtime

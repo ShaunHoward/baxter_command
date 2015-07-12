@@ -1,8 +1,8 @@
-prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel
+prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
 
 Name: robot_commander
 Description: Description of robot_commander
 Version: 0.0.0
-Cflags: -I/home/baxter-dev/ros_workspace/baxter_ms/catkin/src/robot_commander/include
-Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/devel/lib 
+Cflags: -I/home/shaun/ros_workspace/baxter_ms/catkin/src/robot_commander/include
+Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
 Requires: 

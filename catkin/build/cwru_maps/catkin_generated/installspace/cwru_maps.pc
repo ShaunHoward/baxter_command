@@ -1,8 +1,8 @@
-prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/install
+prefix=/home/shaun/ros_workspace/baxter_ms/catkin/install
 
 Name: cwru_maps
 Description: Description of cwru_maps
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/install/lib 
+Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/install/lib 
 Requires: 

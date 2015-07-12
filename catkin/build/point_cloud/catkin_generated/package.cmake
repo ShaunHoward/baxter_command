@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "point_cloud")
-set(point_cloud_MAINTAINER "kxh337 <kxh337@todo.todo>")
-set(point_cloud_DEPRECATED "")
-set(point_cloud_VERSION "0.0.0")
-set(point_cloud_BUILD_DEPENDS "roscpp" "std_msgs" "cwru_srv" "pcl_conversions" "pcl_ros" "sensor_msgs" "tf")
-set(point_cloud_RUN_DEPENDS "std_msgs" "cwru_srv" "pcl_conversions" "pcl_ros" "sensor_msgs" "tf" "roscpp")
-set(point_cloud_BUILDTOOL_DEPENDS "catkin" "catkin_simple")

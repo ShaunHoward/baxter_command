@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "steering_algorithm")
-set(steering_algorithm_MAINTAINER "shaun <shaun@todo.todo>")
-set(steering_algorithm_DEPRECATED "")
-set(steering_algorithm_VERSION "0.0.0")
-set(steering_algorithm_BUILD_DEPENDS "eigen" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs" "tf")
-set(steering_algorithm_RUN_DEPENDS "eigen" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs" "tf")
-set(steering_algorithm_BUILDTOOL_DEPENDS "catkin")

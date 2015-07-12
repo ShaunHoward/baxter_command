@@ -1,8 +1,8 @@
-prefix=/home/baxter-dev/ros_workspace/baxter_ms/catkin/install
+prefix=/home/shaun/ros_workspace/baxter_ms/catkin/install
 
 Name: cwru_msgs
 Description: Description of cwru_msgs
 Version: 0.0.0
-Cflags: -I/home/baxter-dev/ros_workspace/baxter_ms/catkin/install/include
-Libs: -L/home/baxter-dev/ros_workspace/baxter_ms/catkin/install/lib 
+Cflags: -I/home/shaun/ros_workspace/baxter_ms/catkin/install/include
+Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/install/lib 
 Requires: message_runtime
