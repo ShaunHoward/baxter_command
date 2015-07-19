@@ -1,2 +1,0 @@
-set(cwru_srv_MESSAGE_FILES "")
-set(cwru_srv_SERVICE_FILES "/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/path_service_message.srv;/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_bool_service_message.srv;/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_int_service_message.srv;/home/shaun/ros_workspace/baxter_ms/catkin/src/cwru_srv/srv/simple_float_service_message.srv")

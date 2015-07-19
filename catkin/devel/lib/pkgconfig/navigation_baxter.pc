@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
-
-Name: navigation_baxter
-Description: Description of navigation_baxter
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
-Requires: 

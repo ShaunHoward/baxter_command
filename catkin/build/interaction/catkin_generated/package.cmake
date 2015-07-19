@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "interaction")
-set(interaction_MAINTAINER "baxter-dev <baxter-dev@todo.todo>")
-set(interaction_DEPRECATED "")
-set(interaction_VERSION "0.0.0")
-set(interaction_BUILD_DEPENDS )
-set(interaction_RUN_DEPENDS )
-set(interaction_BUILDTOOL_DEPENDS "catkin")

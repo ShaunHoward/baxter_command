@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "navigation_baxter")
-set(navigation_baxter_MAINTAINER "baxter-dev <baxter-dev@todo.todo>")
-set(navigation_baxter_DEPRECATED "")
-set(navigation_baxter_VERSION "0.0.0")
-set(navigation_baxter_BUILD_DEPENDS )
-set(navigation_baxter_RUN_DEPENDS )
-set(navigation_baxter_BUILDTOOL_DEPENDS "catkin")

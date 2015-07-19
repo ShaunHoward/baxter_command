@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "speech")
-set(speech_MAINTAINER "baxter-dev <baxter-dev@todo.todo>")
-set(speech_DEPRECATED "")
-set(speech_VERSION "0.0.0")
-set(speech_BUILD_DEPENDS )
-set(speech_RUN_DEPENDS )
-set(speech_BUILDTOOL_DEPENDS "catkin")

@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/install
-
-Name: cwru_configs
-Description: Description of cwru_configs
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/install/lib 
-Requires: 

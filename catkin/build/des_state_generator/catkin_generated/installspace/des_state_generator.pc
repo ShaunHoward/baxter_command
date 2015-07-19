@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/install
-
-Name: des_state_generator
-Description: Description of des_state_generator
-Version: 0.0.0
-Cflags: -I/home/shaun/ros_workspace/baxter_ms/catkin/install/include
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/install/lib 
-Requires: 

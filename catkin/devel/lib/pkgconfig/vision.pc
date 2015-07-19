@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
-
-Name: vision
-Description: Description of vision
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
-Requires: 

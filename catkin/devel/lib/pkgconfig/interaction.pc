@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
-
-Name: interaction
-Description: Description of interaction
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
-Requires: 

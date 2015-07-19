@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
-
-Name: media_learning_agent
-Description: Description of media_learning_agent
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
-Requires: 

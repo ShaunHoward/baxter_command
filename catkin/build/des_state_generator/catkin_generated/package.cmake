@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "des_state_generator")
-set(des_state_generator_MAINTAINER "shaun <shaun@todo.todo>")
-set(des_state_generator_DEPRECATED "")
-set(des_state_generator_VERSION "0.0.0")
-set(des_state_generator_BUILD_DEPENDS "cwru_msgs" "eigen" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs" "robot_commander" "tf")
-set(des_state_generator_RUN_DEPENDS "cwru_msgs" "eigen" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs" "robot_commander" "tf")
-set(des_state_generator_BUILDTOOL_DEPENDS "catkin" "cmake_modules")

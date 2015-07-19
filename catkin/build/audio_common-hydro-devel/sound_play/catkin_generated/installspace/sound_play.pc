@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/install
-
-Name: sound_play
-Description: Description of sound_play
-Version: 0.2.7
-Cflags: -I/home/shaun/ros_workspace/baxter_ms/catkin/install/include
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/install/lib 
-Requires: message_runtime actionlib_msgs

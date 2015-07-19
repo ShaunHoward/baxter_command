@@ -1,8 +1,0 @@
-prefix=/home/shaun/ros_workspace/baxter_ms/catkin/devel
-
-Name: cwru_base
-Description: Description of cwru_base
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/shaun/ros_workspace/baxter_ms/catkin/devel/lib 
-Requires: roscpp geometry_msgs
