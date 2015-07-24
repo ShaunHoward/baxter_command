@@ -58,3 +58,6 @@ class CommandInterpreter:
                     time.sleep(10)
             else:
                 self.print_alert("No tasks received...")
+
+if __name__ == "__main__":
+    CommandInterpreter().begin()
