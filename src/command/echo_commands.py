@@ -49,15 +49,26 @@ class CommandInterpreter:
         sys.stdout.flush()
 
     def begin(self):
-        while not rospy.is_shutdown():
+         while not rospy.is_shutdown():
+            self.initiate_status_validator()
             if self.get_tasks():
                 for task in self.get_tasks():
                     command = task['text']
                     self.print_alert("The commander says to " + command)
-                    self.task_completed(task)
-                    time.sleep(10)
+                    interpretation = self.interpret(command)
+                    status_code = self.execute(interpretation)
+                    continue_ = self.status_validator.validate(status_code)
+                    if continue_:
+                        self.task_completed(task)
+                        time.sleep(10)
+                    else:
+                        raise Exe
             else:
                 self.print_alert("No tasks received...")
+
+    def initiate_status_validator(self):
+        pass
+
 
 if __name__ == "__main__":
     CommandInterpreter().begin()
