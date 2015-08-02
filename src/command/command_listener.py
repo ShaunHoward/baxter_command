@@ -20,18 +20,30 @@ import rospy
 
 import sys
 
+from exception.task_execution_exception import TaskExecutionError
+from validate.status_validator import StatusValidator
+from command.command_interpreter import CommandInterpreter
+
 user_name = 'wsnewman@case.edu'
 password = '1lmiagmc!'
 
 
-class CommandInterpreter:
+class CommandListener:
     echo = None
+    interpreter = None
+    executor = None
 
     def __init__(self):
+        self.interpreter = CommandInterpreter()
+        self.executor = CommandExecutor()
         self.access_echo()
-        pass
+        # pass
 
     def access_echo(self):
+        try:
+            raise TaskExecutionError(0)
+        except TaskExecutionError as e:
+            print e.msg
         print "Trying to access echo web server..."
         while not self.echo:
             self.echo = PyEcho.PyEcho(user_name, password)
@@ -48,27 +60,23 @@ class CommandInterpreter:
         sys.stdout.write("\r" + message)
         sys.stdout.flush()
 
-    def begin(self):
-         while not rospy.is_shutdown():
-            self.initiate_status_validator()
+    def listen(self):
+
+        while not rospy.is_shutdown():
             if self.get_tasks():
                 for task in self.get_tasks():
                     command = task['text']
                     self.print_alert("The commander says to " + command)
-                    interpretation = self.interpret(command)
-                    status_code = self.execute(interpretation)
-                    continue_ = self.status_validator.validate(status_code)
+                    interpretation = self.interpreter.interpret(command)
+                    status_code = self.executor.execute(interpretation)
+                    continue_, message = StatusValidator.validate(status_code)
                     if continue_:
                         self.task_completed(task)
                         time.sleep(10)
                     else:
-                        raise Exe
-            else:
-                self.print_alert("No tasks received...")
-
-    def initiate_status_validator(self):
-        pass
-
+                        raise TaskExecutionError(message)
+        else:
+            self.print_alert("No tasks received...")
 
 if __name__ == "__main__":
-    CommandInterpreter().begin()
+    CommandListener().listen()

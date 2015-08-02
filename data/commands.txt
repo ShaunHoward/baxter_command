@@ -1,0 +1,2 @@
+"Start up baxter":start_baxter
+"Shut down baxter":shut_down_baxter
