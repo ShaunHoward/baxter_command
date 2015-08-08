@@ -1,6 +1,6 @@
 __author__ = 'shaun_howard'
 
-from execute.interface.executor import Executor
+from command.executor.interface.executor import Executor
 
 
 class GitExecutor(Executor):

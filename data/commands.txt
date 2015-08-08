@@ -1,2 +1,4 @@
-"Start up baxter":start_baxter
-"Shut down baxter":shut_down_baxter
+Start up baxter:start_up_baxter
+Shut down baxter:shut_down_baxter
+Open gripper of Baxter:open_baxter_gripper
+Close gripper of Baxter:close_baxter_gripper

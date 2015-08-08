@@ -1,7 +1,7 @@
 __author__ = 'shaun_howard'
 
 status_code_map = {
-    1: "Execute method does not exist for entity",
+    1: "Interpretation not found in database",
     2: "",
     3: "",
     4: "",
@@ -19,7 +19,9 @@ class StatusValidator:
 
     @staticmethod
     def validate(status_code):
-        if status_code_map[status_code]:
+        if status_code == 0:
+            return True
+        elif status_code_map[status_code]:
             return False, status_code_map[status_code]
         else:
-            return True, "Command successfully processed"
+            return False, "Error unknown"
